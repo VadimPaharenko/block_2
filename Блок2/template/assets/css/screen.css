@@ -1,11 +1,10 @@
 /*===============================common styles==============================*/
 body {
-
     color: rgb(119, 119, 119);
+    flex-wrap: wrap;
     font-family: "Montserrat", sans-serif ;
     font-size: 9.5px;
     width: 720px;
-    flex-wrap: wrap;
 }
 
 @media (max-width: 480px){
@@ -22,8 +21,8 @@ h2 {
 
 }
 h3 {
-    font-size: 12x;
     color: #333333;
+    font-size: 12x;
 }
 p {
 
@@ -45,23 +44,23 @@ a.btn{
     background-color: #2b7de0;
     border: 1px solid #2b7de0;
     border-radius: 2px;
-    padding: 4px 43px 10px 41px;
-    text-decoration: none;
-    margin: 2px 0 0 3px;  
     font-size: 8.5px;
     height: 10px;
-    text-transform: uppercase;
     line-height: 1.765; 
+    margin: 2px 0 0 3px; 
+    padding: 4px 43px 10px 41px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 @media (max-width: 480px){
     a.btn{
         font-size: 12px;
-        margin: 4px 4px 0 0;  
-        width: 210px;
-        padding: 7px 1px 13px 56px;
-        height: 12px;
+        height: 14px;
         line-height: 1.713;
+        margin: 4px 0 0 0;  
+        padding: 7px 0 13px 59px;
+        width: 132px;
     }
 }
 
@@ -77,27 +76,31 @@ a.btn:active{
 @media (max-width: 480px){
     .products{
         display: flex;
-        margin: 26px 0 500px;
         flex-wrap: wrap;
+        margin: 0 0 24px;
     }
 }
 
-.products__item1 {
-    height: 130px;
-    border-bottom: 1px solid rgb(245, 246, 249);
-    margin: 0 0 24px 0;
-}
-
 @media (max-width: 480px){
-    .products__item1{
+    .products__items{
         display: block;
     }
 }
 
+.products__item1 {
+    border-bottom: 1px solid rgb(245, 246, 249);
+    margin: 0 0 17px 0;
+}
+
 @media (max-width: 480px){
-    .products__item2{
-        margin-top: 100px;
+    .products__item1{
+        border: #ffffff;
+
     }
+}
+.products__item2 {
+    border-bottom: 1px solid rgb(245, 246, 249);
+    margin: 2px 0 17px 0;
 }
 /*------------------------------product__photo-----------------------------------*/
 .product {
@@ -108,8 +111,9 @@ a.btn:active{
 @media (max-width: 480px){
     .product{
         display: block;
-        width: 480px;
         margin: 37px 0 0 26px;
+        padding: 0 0 35px 25px;
+        width: 480px;
     }
 }
 
@@ -119,124 +123,143 @@ a.btn:active{
 
 
 .photo__image1 {
-    width: 117px;
     height: 116px;
+    width: 117px;
 }
 
 @media (max-width: 480px){
     .photo__image1{
-        width: 378px;
         height: 377px;
+        width: 378px;
     }
 }
 
 .photo__image2 {
-    width: 116px;
     height: 117px;
+    width: 116px;
 }
 
 @media (max-width: 480px){
     .photo__image2{
-        width: 378px;
         height: 377px;
+        width: 378px;
     }
 }
 
 /*------------------------------photo-tags-----------------------------------*/
 .photo__tags {
+    color: #ffffff;
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    color: #ffffff;
     font-size: 9px;
-    width: 116px;
     line-height: 1.667;
+    position: absolute;
+    width: 116px;
 }
 
 @media (max-width: 480px){
     .photo__tags {
-        width: 378px;
         font-size: 12px;
+        width: 378px;
     }
 }
 
 .tags__tag1 {
     background-color: #f7d33b;
     border-radius: 2px;
-    width: 29px;
-    height: 11px;
-    padding: 2px 7px 6px 6px;
     color: #333333;
+    height: 11px;
     margin: 0 0 2px 1px;
+    padding: 2px 7px 6px 6px;
+    width: 29px;
 }
   
+@media (max-width: 480px){
+    .tags__tag1 {
+        height: 16px;
+        margin: 0 2px 0 1px;
+        padding: 2px 8px 7px 8px;
+        width: 42px;
+    }
+}
+
 .tags__tag2 {
     background-color: rgb(117, 88, 205);
     border-radius: 2px;
-    width: 62px;
     height: 11px;
-    padding: 2px 7px 6px 6px;
     margin: 0 0 2px 1px;
+    padding: 2px 7px 6px 6px;
+    width: 62px;
 }
 
 @media (max-width: 480px){
     .tags__tag2 {
-        width: 82px;
         height: 17px;
         padding: 2px 8px 6px 9px;
+        width: 82px;
     }
 }
 
 .tags__tag3 {
     background-color: #62c34b;
     border-radius: 2px;
-    padding: 2px 7px 6px 6px;
-    width: 42px;
     height: 11px;
     margin: 0 0 0 1px;
+    padding: 2px 7px 6px 6px;
+    width: 42px;
 }
 
 @media (max-width: 480px){
     .tags__tag3 {
-        width: 53px;
         height: 17px;
-        padding: 2px 10px 6px 9px;
         margin: 0 0 0 4px;
+        padding: 2px 10px 6px 9px;
+        width: 53px;
     }
 }
 
 .tags__tag4 {
     background-color: #e74650;
     border-radius: 2px;
-    width: 18px;
     height: 11px;
-    padding: 2px 6px 6px 6px;
     margin: 0 0 0 2px;
+    padding: 2px 6px 6px 6px;
+    width: 18px;
+}
+
+@media (max-width: 480px){
+    .tags__tag4 {
+        height: 16px;
+        margin: 0 0 0 4px;
+        padding: 2px 9px 8px 8px;
+        width: 20px;
+    }
 }
 
 /*===============================product__info==============================*/
 .product__info {
-    margin: 0 0 0 25px;
-    line-height: 1.579;
     font-size: 9.5px;
-    width: 323px;
     flex: none;
+    line-height: 1.579;
+    margin: 0 0 0 25px;
+    width: 323px;
+
 }
 
 @media (max-width: 480px){
     .product__info {
-        margin: 28px 0 0 0;
         font-size: 13px;
-        width: 394px;
         line-height: 1.462;
+        margin: 28px 0 0 0;
+        width: 394px;
     }
 }
 
 a.product__name {
-    font-size: 12px;
     color: #333333;
-    text-decoration: none;
+    font-size: 12px;
     line-height: 1.2;
+    text-decoration: none;
 }
 
 @media (max-width: 480px){
@@ -257,13 +280,14 @@ a.product__name:hover {
 
 @media (max-width: 480px){
     .product__description {
-        margin: 16px 0 16px 0;
+        line-height: 1.462;
+        margin: 18px 0 18px 0;
     }
 }
 /*------------------------------product__specifications-----------------------------------*/
 .product__specifications {
-    padding: 0 0 6px 0;
     line-height: 1.579;
+    padding: 0 0 6px 0;
 }
 
 @media (max-width: 480px){
@@ -271,7 +295,8 @@ a.product__name:hover {
         line-height: 1.612;
     }
 }
-  
+
+
 .specifications__value {
     color: #333333;
 }
@@ -282,7 +307,7 @@ a.product__name:hover {
 
 @media (max-width: 480px){
     .specifications__separator {
-        margin: 0 12px 0 12px;
+        margin: 0 9px 0 9px;
     }
 }
 
@@ -294,13 +319,12 @@ a.product__name:hover {
 
 @media (max-width: 480px){
     .product__purchase{
-        margin: 0 0 0 0;
+        margin: -2px 0 0 0;
     }
 }
 
-.kek{}
 @media (max-width: 480px){
-    .kek{
+    .purchase__items{
         display: flex;
     }
 }
@@ -312,14 +336,25 @@ a.product__name:hover {
 
 @media (max-width: 480px){
     .product__information{
-        margin: -50px 0 0 65px;
+        margin: -49px 0 0 70px;
+    }
+}
+
+.product__information2{
+    display: flex;
+    margin: 11px 0 0 3px;
+}
+
+@media (max-width: 480px){
+    .product__information2{
+        margin: -72px 0 0 -16px;
     }
 }
 
 .information__text{
-    margin: 0 0 0 4px;
     font-size: 9px;
     line-height: 1.667;
+    margin: 0 0 0 4px;
 }
 
 @media (max-width: 480px){
@@ -329,17 +364,21 @@ a.product__name:hover {
     }
 }
 
-
-a.information__link {
-    text-decoration: none;
-    color: #777777;
+.info-svg{
+    height: 13px;
+    width: 12px;
 }
 
 @media (max-width: 480px){
-    a.information__link{
-        width: 16px;
+    .info-svg{
         height: 17px;
+        width: 16px;
     }
+}
+
+a.information__link {
+    color: #777777;
+    text-decoration: none;
 }
 
 a.information__link:hover {
@@ -363,32 +402,32 @@ a.information__link:active {
 }
 
 .product__quantity {
-    display: flex;
     background-color: rgb(248, 249, 251);
     border: 1px solid rgb(240, 240, 241);
     border-radius: 2px;
-    width: 137px;
+    display: flex;
     height: 24px;
     margin: -1px 0 0 3px;   
+    width: 137px;
 }
 
 @media (max-width: 480px){
     .product__quantity {
         margin: 0 0 0 0;
-        width: 193px;
         height: 35px; 
+        width: 193px;
     }
 }
 
 .minus {
+    height: 24px;
     width: 9px;
-    height: 24px
     }
 
 @media (max-width: 480px){
     .minus {
-        width: 11px;
-        height: 24px
+        height: 24px;
+        width: 15px;
     }
 }
 
@@ -399,7 +438,7 @@ a.quantity__minus{
 
 @media (max-width: 480px){
     a.quantity__minus {
-        padding: 8px 0 0 12px;
+        padding: 5px 0 0 10px;
     }
 }
 
@@ -412,26 +451,27 @@ a.quantity__minus:active{
 }
 
 .quantity__value{
-    padding: 7px 0 0 52px;
     font-size: 9px;
+    padding: 7px 0 0 52px;
 }
-
+  
 @media (max-width: 480px){
     .quantity__value {
-        padding: 13px 0 0 70px;
-        font-size: 11px;
+        font-size: 12px;
+        line-height: 1.598;
+        padding: 9px 0 0 70px;
     }
 }
 
 .plus {
+    height: 9px;
     width: 9px;
-    height: 9px
     }
 
 @media (max-width: 480px){
     .plus {
-        width: 11px;
-        height: 11px
+        height: 15px;
+        width: 15px;
     }
 }
 
@@ -442,7 +482,7 @@ a.quantity__plus{
 
 @media (max-width: 480px){
     a.quantity__plus {
-        padding: 13px 0 0 70px;
+        padding: 11px 0 0 70px;
     }
 }
 
@@ -457,10 +497,10 @@ a.quantity__plus:active{
 /*------------------------------product__availability-----------------------------------*/
 .product__availability {
     font-size: 8px;
-    padding: 0 0 14px;
-    margin: -4px 0 -7px 2px;
-    text-transform: uppercase; 
     line-height: 1.875;
+    margin: -4px 0 -7px 2px;
+    padding: 0 0 14px;
+    text-transform: uppercase; 
 }
 
 @media (max-width: 480px){
@@ -475,38 +515,45 @@ a.quantity__plus:active{
 }
   
 .availability__stock {
+    color: #5fa800;
     margin: 1px 0 0 1px;
-    color: #5fa800
 }
 
 /*------------------------------product__price-----------------------------------*/
 .product__price {
     color: #333333;
-    padding: 0 0 7px;
     font-size: 12.5px;
-    font-weight: bold;
     line-height: 1.2;
     margin: 0 0 0 3px;
+    padding: 0 0 7px;
 }
 
 @media (max-width: 480px){
     .product__price {
         font-size: 17px;
-        margin: 0 0 3px 0;
+        margin: 0 0 3px 1px;
     }
 }
 .price__new {
+    font-weight: bold;
     padding: 0 0 8px;
 }
 
 .price__old {
-    margin: -5px 0 7px 0;
     color: #777777;
     font-size: 9.5px;
     line-height: 1.579;
+    margin: -5px 0 7px 0;
     text-decoration: line-through;
 }
 
-  
+@media (max-width: 480px){
+    .price__old {
+        color: #333333;
+        font-size: 13px;
+        line-height: 1.154;
+        margin: 0 0 10px 1px;
+    }
+}
 
   
